@@ -1,90 +1,90 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Flexbox</title>
-	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		body {
-			background: #efefef;
-			font-size: 100%;
-			font-family: 'Droid Sans', Arial, sans-serif;
-			line-height: 1.5;
-		}
-		header {
-			padding: 40px;
-		}
-		h1 {
-			text-align: center;
-			font-size: 4rem;
-			color: hotpink;
-		}
-		p { font-size: .75rem }
-		.tile-container {
-			width: 80%;
-			margin: 0 auto;
-			/*border: 1px solid hotpink;*/
-		}
-		.tile {
-			float: left;
-			width: 200px;
-			height: 300px;
-			background: #fff;	
-			margin-left: 10px;	
-			margin-bottom: 10px;
-		}
-		.tile figure {
-			height: 100px;
-			background: #aaa;
-			font-size: 2rem;
-			text-align: center;
-		}
-		.tile-body h2 {
-			margin-bottom: 10px;
-		}
-		.tile-body {
-			padding: 10px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>Flexbox Demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-	<header>
-		<h1>Flexbox!</h1>
-	</header>
-	<main class="tile-container">
-		<div class="tile">
-			<figure>1</figure>
-			<div class="tile-body">
-				<h2>Flex item</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, optio?</p>
-			</div>
-		</div>
-		<div class="tile">
-			<figure>2</figure>
-			<div class="tile-body">
-				<h2>Flex item</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, optio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, officia!</p>
-			</div>
-		</div>
-		<div class="tile">
-			<figure>3</figure>
-			<div class="tile-body">
-				<h2>Flex item</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, optio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam adipisci tempora, assumenda ea aliquam ex?</p>
-			</div>
-		</div>
-		<div class="tile">
-			<figure>4</figure>
-			<div class="tile-body">
-				<h2>Flex item</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, optio?</p>
-			</div>
-		</div>
-
-	</main>
+    <header>
+        <h1 id="top">Flexbox Demo</h1>
+        <p class="links"><a href="#example1">Example 1</a> | <a href="#example2">Example 2</a></p>
+    </header>
+    <main>
+        <div id="example1">
+            <div class="tile-header"><h2>Example #1</h2></div>
+            <div class="tile-container">
+                <div class="tile">
+                    <figure>1</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>The players all played at once without waiting for turns, quarrelling all the while, and fighting for the hedgehogs; and in a very short time the Queen was in a furious passion, and went stamping about, and shouting 'Off with his head!' or 'Off with her head!' about once in a minute.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <figure>2</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>Alice began to feel very uneasy: to be sure, she had not as yet had any dispute with the Queen, but she knew that it might happen any minute, 'and then,' thought she, 'what would become of me? They're dreadfully fond of beheading people here; the great wonder is, that there's any one left alive!'</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <figure>3</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>'Of course it is,' said the Duchess, who seemed ready to agree to  everything that Alice said; 'there's a large mustard-mine near here. And  the moral of that is&mdash;"The more there is of mine, the less there is of  yours."'</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <figure>4</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>'That's nothing to what I could say if I chose,' the Duchess replied, in  a pleased tone.</p>
+                        <p>'Pray don't trouble yourself to say it any longer than that,' said  Alice.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-footer">
+                <p class="links"><a href="#top">Back to Top</a></p>
+            </div>
+        </div>
+        <div id="example2">
+            <div class="tile-header"><h2>Example #2</h2></div>
+            <div class="tile-container">
+                <div class="tile">
+                    <figure>1</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>The players all played at once without waiting for turns, quarrelling all the while, and fighting for the hedgehogs; and in a very short time the Queen was in a furious passion, and went stamping about, and shouting 'Off with his head!' or 'Off with her head!' about once in a minute.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <figure>2</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>Alice began to feel very uneasy: to be sure, she had not as yet had any dispute with the Queen, but she knew that it might happen any minute, 'and then,' thought she, 'what would become of me? They're dreadfully fond of beheading people here; the great wonder is, that there's any one left alive!'</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <figure>3</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>'Of course it is,' said the Duchess, who seemed ready to agree to  everything that Alice said; 'there's a large mustard-mine near here. And  the moral of that is&mdash;"The more there is of mine, the less there is of  yours."'</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <figure>4</figure>
+                    <div class="tile-body">
+                        <h2>Flex item</h2>
+                        <p>'That's nothing to what I could say if I chose,' the Duchess replied, in  a pleased tone.</p>
+                        <p>'Pray don't trouble yourself to say it any longer than that,' said  Alice.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-footer">
+                <p class="links"><a href="#top">Back to Top</a></p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
